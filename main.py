@@ -23,11 +23,13 @@ def picture(p):
 
     return image
 
-prev_img = ImageTk.PhotoImage(picture("Previous.png"))
-stop_img = ImageTk.PhotoImage(picture("Stop.png"))
-play_img = ImageTk.PhotoImage(picture("Play.png"))
-pause_img = ImageTk.PhotoImage(picture("Pause.png"))
-next_img = ImageTk.PhotoImage(picture("Next.png"))
+str = "C:\\Users\\Om\\Documents\\Internships\\Code Clause\\Music Player in Python\\"
+
+prev_img = ImageTk.PhotoImage(picture(str + "Previous.png"))
+stop_img = ImageTk.PhotoImage(picture(str + "Stop.png"))
+play_img = ImageTk.PhotoImage(picture(str + "Play.png"))
+pause_img = ImageTk.PhotoImage(picture(str + "Pause.png"))
+next_img = ImageTk.PhotoImage(picture(str + "Next.png"))
 
 def select():
     label.config(text = listBox.get("anchor"))
